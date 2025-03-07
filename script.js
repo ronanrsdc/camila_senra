@@ -110,3 +110,14 @@ papers.forEach((paper) => {
   const p = new Paper();
   p.init(paper);
 });
+
+window.onload = function () {
+  const preloader = document.getElementById("preloader");
+
+  // Esconder preloader com efeito suave
+  preloader.style.opacity = "0";
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500);
+};
+
