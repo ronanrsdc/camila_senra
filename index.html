@@ -36,6 +36,40 @@
 <div class="paper">
 <p class="p1">Clique e arraste para mover</p>
 </div>
+  <div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<style>
+  /* Estilização do Preloader */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* Pode mudar a cor do fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
 <!-- javascript file -->
   <script  src="script.js"></script>
 </body>
